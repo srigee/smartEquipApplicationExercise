@@ -1,11 +1,11 @@
-# serverclient
+# Smart Equip Exercise  
 
 default port: 8083
 
 To change port navigate to resources/application.properties
 Change the server.port value.
 
-The following project is a smartEquipExercise application implemented using spring boot and H2 Database.
+The following project is a smartEquipExercise application implemented using Java 8 and Spring Boot.
 It is built using Spring MVC architecture
 
 The following are the clasess implemented <br />
@@ -18,12 +18,12 @@ The following are the clasess implemented <br />
 
 2. SmartEquipMessagingService class - Which accepts the incoming requests from controller class and responds to them <br/>
 
-   i. questionsWithRandomNumber - It generates a random two or three variable question </br>
+   i. questionsWithRandomNumber - It generates a random two or three variable and forms a question </br>
    ii. checkAnswersForQuestion - It receives the client response to the question and calculates the corresponding questions answer</br>
    a. if the answer is wrong then the client returns is wrong and sends bad response with 200 status</br>
    b. if the answer is correct then the client returns is OK and sends 200 response to the client</br>
 
-3. QuestionModel class -  It is with lombok annotation @AllArgsConstructor,   @Getter </br>
+3. QuestionModel class -  It is with lombok annotations - @AllArgsConstructor,   @Getter </br>
 
 4. LoggerAspectJ class - Implemented "Log" statements in controller and service classes with  @Aspect, @Component</br>
 
